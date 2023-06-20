@@ -1,0 +1,17 @@
+import './App.css'
+import Navbar from './components/_layout/Navbar';
+
+function App() {  
+
+  return (
+    <>
+      <div>
+
+        <Navbar />
+
+      </div>      
+    </>
+  )
+}
+
+export default App
