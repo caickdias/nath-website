@@ -1,16 +1,21 @@
 import './App.css'
+
 import Navbar from './components/_layout/Navbar';
+import Hero from './components/_layout/Hero';
+import LoadingScreen from './components/_layout/LoadingScreen';
 
 function App() {  
 
   return (
-    <>
-      <div>
+    <div className='flex w-full h-screen'>
 
-        <Navbar />
+      <LoadingScreen />
 
-      </div>      
-    </>
+      <Navbar />
+
+      <Hero />
+
+    </div>      
   )
 }
 
