@@ -1,24 +1,26 @@
 import { useEffect, useState } from 'react';
-import Logo from '../Logo';
 
 import nathpp from '../../assets/landing-page/nath-hero.png';
 
 const LoadingScreen = () => {
 
-    const LOADING_DELAY = 1000;
+    const LOADING_DELAY = 500;
 
     const [flashScale, setFlashScale] = useState(0.0001);
     const [picOpacity, setPicOpacity] = useState(1);
     const [visibility, setVisibility] = useState(1);
+    const [picX, setPicX] = useState(0);
+    const [picY, setPicY] = useState(0);
 
     const [loading, setLoading] = useState(0);
 
     useEffect(() => {
+        setTimeout(() => setLoading(-1000), [LOADING_DELAY]);
         setTimeout(() => setFlashScale(100), [2500 + LOADING_DELAY]);
         setTimeout(() => setFlashScale(0), [2545 + LOADING_DELAY]);
-        setTimeout(() => setPicOpacity(0), [2700 + LOADING_DELAY]);
+        setTimeout(() => setPicOpacity(0), [2800 + LOADING_DELAY]);
+        setTimeout(() => {setPicX(150);setPicY(-100)}, [2800 + LOADING_DELAY]);
         setTimeout(() => setVisibility(0), [4000 + LOADING_DELAY]);
-        setTimeout(() => setLoading(-1000), [LOADING_DELAY]);
     },[]);
 
 
@@ -37,7 +39,8 @@ const LoadingScreen = () => {
             <img 
                 src={nathpp} 
                 alt="nath avec snakes"
-                className='h-1/2  z-10'
+                className='h-1/2  z-10 transition-all duration-300'
+                style={{ transform: `translate(${picX}px, ${picY}px)` }}
             />
         </div>
     )
