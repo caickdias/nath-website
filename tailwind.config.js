@@ -9,6 +9,10 @@ export default {
       colors: {
         "logo-light-blue": "#BDC9D2",
         "logo-dark-blue": "#5A7B96"
+      },
+      fontFamily: {
+        'quattro': 'Quattrocento, serif',
+        'quattro-sans': 'Quattrocento Sans, sans-serif'
       }
     },
   },

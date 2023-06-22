@@ -16,7 +16,7 @@ const LoadingScreen = () => {
 
     useEffect(() => {
         setTimeout(() => setLoading(-1000), [LOADING_DELAY]);
-        setTimeout(() => setFlashScale(100), [2500 + LOADING_DELAY]);
+        setTimeout(() => setFlashScale(120), [2500 + LOADING_DELAY]);
         setTimeout(() => setFlashScale(0), [2545 + LOADING_DELAY]);
         setTimeout(() => setPicOpacity(0), [2800 + LOADING_DELAY]);
         setTimeout(() => {setPicX(150);setPicY(-100)}, [2800 + LOADING_DELAY]);
@@ -28,7 +28,7 @@ const LoadingScreen = () => {
         <div className="absolute w-screen h-screen flex items-center justify-center bg-black z-[100] overflow-hidden transformation-all duration-700"
             style={{ opacity: picOpacity, transform: `scale(${visibility})` }}
         >
-            <div className='absolute bottom-[34%] left-[49%] bg-white blur-lg w-16 h-16 rounded-full transition-all duration-300 z-[20]'
+            <div className='absolute bottom-[41%] left-[49%] bg-white blur-lg w-16 h-16 rounded-full transition-all duration-300 z-[20]'
                 style={{ transform: `scale(${flashScale})` }}
             />
 
