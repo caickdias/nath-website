@@ -9,11 +9,11 @@ const Hero = () => {
   return (
     <Section>
         <Left flex={4} centerLeft >
-          <div className='mt-52'>
+          <div className='lg:mt-52'>
             {titles.map(title => <Title key={title.name} title={title.text} />)}
           </div>
 
-          <h1 className='text-3xl my-12'>{subtitle}</h1>
+          <h1 className='text-lg my-5 lg:my-12 lg:text-3xl'>{subtitle}</h1>
 
           <SocialIcons />
 
@@ -23,7 +23,7 @@ const Hero = () => {
           <img 
             src={nathProfilePic}
             alt="nath avec snakes"
-            className='pt-12'
+            className='pt-20 h-full lg:pt-12'
           />
         </Right>
     </Section>
@@ -32,7 +32,8 @@ const Hero = () => {
 
 const Title = ({ title }) => {
   return(
-    <h1 className="text-[5rem]">
+    <h1 className="text-5xl w-screen my-4
+      lg:text-[5rem] lg:w-full">
       {title}
     </h1>
   )
