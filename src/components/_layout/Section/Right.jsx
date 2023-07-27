@@ -1,4 +1,4 @@
-import { getFlexAlignment } from '../../helpers/utils';
+import { getFlexAlignment } from '../../../helpers/utils';
 
 const Right = ({ 
   flex=1,

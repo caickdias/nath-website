@@ -1,11 +1,10 @@
 :root {
-  font-family: 'Quattrocento', serif;
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: Futura, sans-serif; 
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
 
   background-color: #000;
-  color: white;
+  color: #BDC9D2;
 
   scroll-behavior: smooth;
 

@@ -1,7 +1,7 @@
 import nathProfilePic from '../../../assets/landing-page/nath-hero.png';
-import { titles, subtitle } from '../../../data/hero';
+import { titles, subtitle } from '../../../data/landing-page/hero';
 
-import { Section, Left, Right } from '../../Section';
+import { Section, Left, Right } from '../../_layout/Section';
 
 import SocialIcons from '../../SocialIcons';
 
@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <Section>
         <Left flex={4} centerLeft >
-          <div className='mt-36'>
+          <div className='mt-52'>
             {titles.map(title => <Title key={title.name} title={title.text} />)}
           </div>
 
@@ -23,7 +23,7 @@ const Hero = () => {
           <img 
             src={nathProfilePic}
             alt="nath avec snakes"
-            className='h-3/4 mb-36'
+            className='pt-12'
           />
         </Right>
     </Section>
@@ -32,7 +32,7 @@ const Hero = () => {
 
 const Title = ({ title }) => {
   return(
-    <h1 className='text-[5rem] font-quattro tracking-[3px]'>
+    <h1 className="text-[5rem]">
       {title}
     </h1>
   )

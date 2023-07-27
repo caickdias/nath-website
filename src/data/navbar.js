@@ -22,7 +22,7 @@ const items = [
 ];
 
 const cta = {
-    title: "Let's talk!",
+    title: "Let' s talk!",
     link: "#"
 }
 
