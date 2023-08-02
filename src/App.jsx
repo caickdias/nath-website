@@ -6,6 +6,8 @@ import LoadingScreen from './components/_layout/LoadingScreen';
 import BetterSchoolSection from './components/landingPage/BetterSchoolSection';
 import EarlyMoneySection from './components/landingPage/EarlyMoneySection';
 import OnlineCloudSection from './components/landingPage/OnlineCloudSection';
+import HaydnSection from './components/landingPage/haydnSection';
+import EcommerceSection from './components/landingPage/EcommerceSection';
 import SectionDivider from './components/SectionDivider';
 
 function App() {  
@@ -27,6 +29,12 @@ function App() {
       <SectionDivider />
       
       <OnlineCloudSection />
+      <SectionDivider />
+
+      <HaydnSection />
+      <SectionDivider />
+      
+      <EcommerceSection />
       <SectionDivider />
       
     </div>      
