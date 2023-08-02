@@ -1,13 +1,13 @@
 import { Section, Right, Left } from '../../_layout/Section';
 
-import { image, title, titleBold, subtitle, subtitleBold, button1, button2 } from '../../../data/landing-page/betterSchool';
+import { image, title, titleBold, subtitle, subtitleBold, button1, button2 } from '../../../data/landing-page/earlyMoneyHabits';
 
 import Title from '../Title';
 import Subtitle from '../Subtitle';
 import BlueButton from '../../buttons/BlueButton';
 import TransparentButton from '../../buttons/TransparentButton';
 
-const BetterSchoolSection = () => {
+const EarlyMoneySection = () => {
   return (
     <Section>
         <Left>
@@ -23,7 +23,7 @@ const BetterSchoolSection = () => {
 
             <img 
               src={image}
-              alt="iPhones"  
+              alt="mac"  
               className='h-5/6 my-12 lg:hidden'
             />
 
@@ -40,4 +40,4 @@ const BetterSchoolSection = () => {
   )
 }
 
-export default BetterSchoolSection
+export default EarlyMoneySection

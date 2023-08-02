@@ -1,6 +1,6 @@
 const SectionDivider = () => {
   return (
-    <div className="bg-black w-full h-[20rem]">
+    <div className="bg-background w-full h-36 lg:h-[20rem]">
 
     </div>
   )

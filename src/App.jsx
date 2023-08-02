@@ -4,6 +4,7 @@ import Navbar from './components/_layout/Navbar';
 import Hero from './components/landingPage/Hero';
 import LoadingScreen from './components/_layout/LoadingScreen';
 import BetterSchoolSection from './components/landingPage/BetterSchoolSection';
+import EarlyMoneySection from './components/landingPage/EarlyMoneySection';
 import SectionDivider from './components/SectionDivider';
 
 function App() {  
@@ -19,6 +20,9 @@ function App() {
       <SectionDivider />
 
       <BetterSchoolSection />
+      <SectionDivider />
+
+      <EarlyMoneySection />
       <SectionDivider />
       
     </div>      

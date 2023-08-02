@@ -11,6 +11,7 @@ export default {
         "logo-light-blue": "#BDC9D2",
         "logo-dark-blue": "#5A7B96",
         "main-white": "#BDC9D2",
+        "background": "#0F1010",
       },
       fontFamily: {
         'quattro': 'Quattrocento, serif',

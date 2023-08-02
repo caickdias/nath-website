@@ -4,9 +4,10 @@ const TransparentButton = ({ title, link }) => {
       href={link} 
       target="_blank"
       rel="noreferrer"
-      className="flex items-center justify-center py-4 px-6 font-bold 
-      border-2 border-white rounded-full text-[1.75rem] 
-      hover:bg-white hover:text-black transition-colors duration-300"
+      className="flex items-center justify-center py-2 px-4 font-bold 
+      border-2 border-white rounded-full text-base
+      hover:bg-white hover:text-black transition-colors duration-300
+        lg:text-[1.75rem] lg:py-4 lg:px-6"
     >
         {title}
     </a>

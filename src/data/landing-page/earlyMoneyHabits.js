@@ -1,12 +1,12 @@
-import iPhones from '../../assets/landing-page/iPhones.png';
+import mac from '../../assets/landing-page/iMac-financial.png';
 
-const image = iPhones;
+const image = mac;
 
-const titleBold = "Simplify";
-const title = " the private school search proccess";
+const titleBold = "Empower";
+const title = " the financial future of kids";
 
-const subtitle = "Better School Choice | ";
-const subtitleBold = "mobile application";
+const subtitle = "Early Money Habits | ";
+const subtitleBold = "web & mobile";
 
 const button1 = {
     name: 'case-study',
