@@ -1,5 +1,7 @@
 import './App.css'
 
+import { heroSection } from './data/landing-page/squares';
+
 import Navbar from './components/_layout/Navbar';
 import Hero from './components/landingPage/Hero';
 import LoadingScreen from './components/_layout/LoadingScreen';
@@ -22,13 +24,13 @@ function App() {
 
       <Navbar />
 
-      <Hero />
+      <Hero squares={heroSection} />
       <SectionDivider />
 
-      <BetterSchoolSection />
+      <BetterSchoolSection squares={{"oi": 1231}} />
       <SectionDivider />
 
-      <EarlyMoneySection />
+      <EarlyMoneySection teste="asda" />
       <SectionDivider />
       
       <OnlineCloudSection />

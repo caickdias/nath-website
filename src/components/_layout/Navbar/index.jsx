@@ -8,9 +8,9 @@ import Hamburger from "../Hamburger";
 
 const Navbar = () => {
   return (
-    <header className="fixed bg-gradient-to-b from-black via-black to-trasparent z-50 
-      top-0 left-0 flex items-center justify-between w-screen h-40 px-9 
-      lg:px-40 py-12"
+    <header className="fixed bg-gradient-to-b from-background via-background to-trasparent z-50 
+      top-0 left-0 flex items-center justify-between w-screen h-40 px-9
+      lg:px-40 "
     >
         <div className="scale-[0.7] lg:scale-100">
           <Logo />

@@ -21,11 +21,16 @@ const EarlyMoneySection = () => {
         <Right>            
           <Title text={title} bold={titleBold} />
 
-            <img 
-              src={image}
-              alt="mac"  
-              className='h-5/6 my-12 lg:hidden'
-            />
+            <div className='relative my-12'>
+
+              <div className='absolute h-44 w-72 top-20 left-10 shadow-[0px_0_180px_#BDC9D2] shadow-red z-0'></div>
+
+              <img 
+                src={image}
+                alt="mac"  
+                className='relative h-5/6 lg:hidden z-50'
+              />
+            </div>
 
             <Subtitle text={subtitle} bold={subtitleBold} />
 

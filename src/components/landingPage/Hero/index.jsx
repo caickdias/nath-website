@@ -5,11 +5,11 @@ import { Section, Left, Right } from '../../_layout/Section';
 
 import SocialIcons from '../../SocialIcons';
 
-const Hero = () => {
+const Hero = ({ squares }) => {
   return (
-    <Section>
+    <Section squares={squares}>
         <Left flex={4} centerLeft >
-          <div className='lg:mt-52'>
+          <div className='-mt-20 lg:mt-52 z-40'>
             {titles.map(title => <Title key={title.name} title={title.text} />)}
           </div>
 
