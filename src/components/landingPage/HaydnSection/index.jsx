@@ -1,15 +1,15 @@
 import { Section, Right, Left } from '../../_layout/Section';
 
-import { image, title, titleBold, subtitle, subtitleBold, button1, button2 } from '../../../data/landing-page/haydn';
+import { image, title, titleBold, subtitle, subtitleBold, button2 } from '../../../data/landing-page/haydn';
+import { haydn } from '../../../data/landing-page/squares';
 
 import Title from '../Title';
 import Subtitle from '../Subtitle';
-import BlueButton from '../../buttons/BlueButton';
 import TransparentButton from '../../buttons/TransparentButton';
 
 const HaydnSection = () => {
   return (
-    <Section>
+    <Section squares={haydn}>
         <Left>
             <img 
               src={image}
@@ -24,7 +24,7 @@ const HaydnSection = () => {
             <img 
               src={image}
               alt="mac"  
-              className='h-5/6 my-12 lg:hidden'
+              className='h-5/6 my-12 lg:hidden z-50'
             />
 
             <Subtitle text={subtitle} bold={subtitleBold} />

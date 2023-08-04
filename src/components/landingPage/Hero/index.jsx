@@ -1,3 +1,5 @@
+import { heroSection } from '../../../data/landing-page/squares';
+
 import nathProfilePic from '../../../assets/landing-page/nath-hero.png';
 import { titles, subtitle } from '../../../data/landing-page/hero';
 
@@ -5,9 +7,9 @@ import { Section, Left, Right } from '../../_layout/Section';
 
 import SocialIcons from '../../SocialIcons';
 
-const Hero = ({ squares }) => {
+const Hero = () => {
   return (
-    <Section squares={squares}>
+    <Section squares={heroSection}>
         <Left flex={4} centerLeft >
           <div className='-mt-20 lg:mt-52 z-40'>
             {titles.map(title => <Title key={title.name} title={title.text} />)}

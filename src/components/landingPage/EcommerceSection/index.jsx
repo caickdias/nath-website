@@ -1,15 +1,14 @@
 import { Section, Right, Left } from '../../_layout/Section';
 
-import { image, title, titleBold, subtitle, subtitleBold, button1, button2 } from '../../../data/landing-page/ecommerce';
+import { image, title, titleBold, subtitle, subtitleBold } from '../../../data/landing-page/ecommerce';
+import { ecommerce } from '../../../data/landing-page/squares';
 
 import Title from '../Title';
 import Subtitle from '../Subtitle';
-import BlueButton from '../../buttons/BlueButton';
-import TransparentButton from '../../buttons/TransparentButton';
 
 const EcommerceSection = () => {
   return (
-    <Section>
+    <Section squares={ecommerce}>
         <Left>
             <img 
               src={image}
@@ -24,7 +23,7 @@ const EcommerceSection = () => {
             <img 
               src={image}
               alt="mac"  
-              className='h-5/6 my-12 lg:hidden'
+              className='h-5/6 my-12 lg:hidden z-50'
             />
 
             <Subtitle text={subtitle} bold={subtitleBold} />

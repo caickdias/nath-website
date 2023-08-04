@@ -1,6 +1,7 @@
 import { Section, Right, Left } from '../../_layout/Section';
 
 import { image, title, titleBold, subtitle, subtitleBold, button1, button2 } from '../../../data/landing-page/onlineCloud';
+import { onlineCloud } from '../../../data/landing-page/squares';
 
 import Title from '../Title';
 import Subtitle from '../Subtitle';
@@ -9,7 +10,7 @@ import TransparentButton from '../../buttons/TransparentButton';
 
 const OnlineCloudSection = () => {
   return (
-    <Section>
+    <Section squares={onlineCloud}>
         <Left>
             <img 
               src={image}
@@ -24,7 +25,7 @@ const OnlineCloudSection = () => {
             <img 
               src={image}
               alt="mac"  
-              className='h-5/6 my-12 lg:hidden'
+              className='h-5/6 my-12 lg:hidden z-50'
             />
 
             <Subtitle text={subtitle} bold={subtitleBold} />

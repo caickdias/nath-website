@@ -1,6 +1,7 @@
 import { Section, Right, Left } from '../../_layout/Section';
 
 import { image, title, titleBold, subtitle, subtitleBold, button1, button2 } from '../../../data/landing-page/earlyMoneyHabits';
+import { earlyMoney } from '../../../data/landing-page/squares';
 
 import Title from '../Title';
 import Subtitle from '../Subtitle';
@@ -9,7 +10,7 @@ import TransparentButton from '../../buttons/TransparentButton';
 
 const EarlyMoneySection = () => {
   return (
-    <Section>
+    <Section squares={earlyMoney}>
         <Left>
             <img 
               src={image}

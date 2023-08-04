@@ -9,7 +9,7 @@ const Section = ({ children, squares={}}) => {
             return(
               <div 
                 key={index} 
-                className="absolute border-[3px] rounded-xl border-main-white opacity-10 z-50"
+                className="absolute border-[3px] rounded-xl border-main-white opacity-10 z-30"
                 style={{
                   height: `${square.size}px`,
                   width: `${square.size}px`,

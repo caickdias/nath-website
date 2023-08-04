@@ -1,7 +1,5 @@
 import './App.css'
 
-import { heroSection } from './data/landing-page/squares';
-
 import Navbar from './components/_layout/Navbar';
 import Hero from './components/landingPage/Hero';
 import LoadingScreen from './components/_layout/LoadingScreen';
@@ -18,19 +16,19 @@ import Footer from './components/_layout/Footer';
 function App() {  
 
   return (
-    <div className='relative bg-[#0F1010] flex flex-col'>
+    <div className='relative bg-background flex flex-col'>
 
       <LoadingScreen />
 
       <Navbar />
 
-      <Hero squares={heroSection} />
+      <Hero />
       <SectionDivider />
 
-      <BetterSchoolSection squares={{"oi": 1231}} />
+      <BetterSchoolSection />
       <SectionDivider />
 
-      <EarlyMoneySection teste="asda" />
+      <EarlyMoneySection />
       <SectionDivider />
       
       <OnlineCloudSection />
