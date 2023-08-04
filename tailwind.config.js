@@ -16,6 +16,12 @@ export default {
       fontFamily: {
         'quattro': 'Quattrocento, serif',
         'quattro-sans': 'Quattrocento Sans, sans-serif'
+      },
+      backgroundImage: {
+        'aboutme': "url('./src/assets/landing-page/aboutme-bg.webp')",
+      },
+      boxShadow: {
+        'border-box': 'inset 0 20px 30px #0F1010, inset 0 -20px 30px #0F1010'
       }
     },
   },

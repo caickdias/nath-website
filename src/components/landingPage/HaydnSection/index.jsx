@@ -30,8 +30,6 @@ const HaydnSection = () => {
             <Subtitle text={subtitle} bold={subtitleBold} />
 
             <div className=' flex mt-12 gap-2'>
-              <BlueButton title={button1.title} link={button1.link} />
-
               <TransparentButton title={button2.title} link={button2.link} />
             </div>
                           
