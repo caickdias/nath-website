@@ -9,7 +9,9 @@ import OnlineCloudSection from './components/landingPage/OnlineCloudSection';
 import HaydnSection from './components/landingPage/haydnSection';
 import EcommerceSection from './components/landingPage/EcommerceSection';
 import AboutMeSection from './components/landingPage/AboutMeSection';
+import ContactSection from './components/landingPage/ContactSection';
 import SectionDivider from './components/SectionDivider';
+import Footer from './components/_layout/Footer';
 
 function App() {  
 
@@ -39,6 +41,12 @@ function App() {
       <SectionDivider />
 
       <AboutMeSection />
+      <SectionDivider />
+
+      <ContactSection />
+      <SectionDivider />
+
+      <Footer />
       
     </div>      
   )
