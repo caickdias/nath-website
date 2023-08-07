@@ -98,11 +98,27 @@ const ecommerce = {
     }
 }
 
+const aboutme = {
+    sm: {
+        square1: {
+            size: 140,
+            top: 70,
+            left: 210,
+        },
+        square2: {
+            size: 80,
+            top: 210,
+            left: 130,
+        },
+    }
+}
+
 export {
     heroSection,
     betterSchool,
     earlyMoney,
     onlineCloud,
     haydn,
-    ecommerce
+    ecommerce,
+    aboutme
 }
