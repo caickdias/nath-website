@@ -9,7 +9,7 @@ const FirstParagraph = () => {
             <img 
                 src={nathPic}
                 alt="nath pic"
-                className='absolute -top-[80px] left-[190px] w-2/5 z-10'
+                className='absolute -top-[80px] left-[170px] w-2/4 z-10'
             />
 
             <Paragraph text={firstParagraph} />

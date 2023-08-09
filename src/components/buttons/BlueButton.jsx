@@ -4,9 +4,9 @@ const BlueButton = ({ title, link="#" }) => {
         href={link}
         target="_blank"
         rel="noreferrer"
-        className="flex items-center justify-center bg-light-blue py-2 px-4
+        className="relative flex items-center justify-center bg-light-blue py-2 px-4
           font-bold text-black text-base rounded-full
-          hover:scale-110 transition-all duration-300
+          hover:scale-110 transition-all duration-300 z-10
           lg:text-[1.75rem] lg:py-4 lg:px-6"
     >
         {title}

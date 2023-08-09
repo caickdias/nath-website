@@ -112,8 +112,8 @@ const aboutme = {
         },
         square3: {
             size: 80,
-            top: 670,
-            left: 210,
+            top: 645,
+            left: 255,
         },
         square4: {
             size: 100,

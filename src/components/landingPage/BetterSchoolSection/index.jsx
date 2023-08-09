@@ -5,6 +5,7 @@ import { betterSchool } from '../../../data/landing-page/squares';
 
 import Title from '../Title';
 import Subtitle from '../Subtitle';
+import BetterSchoolIcon from '../Icons/BetterSchoolIcon';
 import BlueButton from '../../buttons/BlueButton';
 import TransparentButton from '../../buttons/TransparentButton';
 
@@ -31,7 +32,13 @@ const BetterSchoolSection = () => {
             <Subtitle text={subtitle} bold={subtitleBold} />
 
             <div className=' flex mt-12 gap-2'>
-              <BlueButton title={button1.title} link={button1.link} />
+              
+              <div className='relative flex flex-row pl-12'>
+
+                <BetterSchoolIcon />
+
+                <BlueButton title={button1.title} link={button1.link} />
+              </div>
 
               <TransparentButton title={button2.title} link={button2.link} />
             </div>

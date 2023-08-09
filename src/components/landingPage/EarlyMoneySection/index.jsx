@@ -7,6 +7,7 @@ import Title from '../Title';
 import Subtitle from '../Subtitle';
 import BlueButton from '../../buttons/BlueButton';
 import TransparentButton from '../../buttons/TransparentButton';
+import EarlyMoneyIcon from '../Icons/EarlyMoneyIcon';
 
 const EarlyMoneySection = () => {
   return (
@@ -24,7 +25,7 @@ const EarlyMoneySection = () => {
 
             <div className='relative my-12'>
 
-              <div className='absolute h-44 w-72 top-20 left-10 shadow-[0px_0_180px_#BDC9D2] shadow-red z-0'></div>
+              <div className='absolute h-44 w-72 top-20 left-10 shadow-[0px_0_180px_#BDC9D2] bg-[#383838] blur-xl z-0'></div>
 
               <img 
                 src={image}
@@ -35,8 +36,14 @@ const EarlyMoneySection = () => {
 
             <Subtitle text={subtitle} bold={subtitleBold} />
 
-            <div className=' flex mt-12 gap-2'>
-              <BlueButton title={button1.title} link={button1.link} />
+            <div className=' flex mt-24 gap-2'>
+              
+              <div className='relative mr-3'>
+
+                <EarlyMoneyIcon />
+
+                <BlueButton title={button1.title} link={button1.link} />
+              </div>
 
               <TransparentButton title={button2.title} link={button2.link} />
             </div>

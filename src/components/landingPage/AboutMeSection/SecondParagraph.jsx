@@ -8,7 +8,7 @@ const SecondParagraph = () => {
             <img 
                 src={aboutIcon}
                 alt="about me icon"
-                className="w-1/2 mt-20"
+                className="w-3/5 mt-20"
             />
 
             <Paragraph feat={secondParagraphFeat} text={secondParagraphRest} />

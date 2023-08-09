@@ -12,13 +12,15 @@ const ContactSection = () => {
 
                 <SquaresBg squares={contact} />
 
+                <div className='absolute h-24 rounded-2xl w-24 top-[25%] left-50 shadow-[0px_0_180px_#BDC9D2] bg-[#383838] blur-xl z-0'></div>
+
                 <h1 className='text-5xl leading-normal'>{title}</h1>
                 <h1 className='text-base leading-loose'>{subtitle}</h1>
 
                 <img 
                     src={contactImage}
                     alt="contact image"
-                    className='w-2/5 my-6'
+                    className='w-2/5 my-6 z-10'
                 />
 
                 <h1 className='text-base leading-loose'>{description}</h1>

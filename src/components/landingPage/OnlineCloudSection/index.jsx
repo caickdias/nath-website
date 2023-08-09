@@ -7,6 +7,7 @@ import Title from '../Title';
 import Subtitle from '../Subtitle';
 import BlueButton from '../../buttons/BlueButton';
 import TransparentButton from '../../buttons/TransparentButton';
+import OnlineCloudIcon from '../Icons/OnlineCloudIcon';
 
 const OnlineCloudSection = () => {
   return (
@@ -31,8 +32,14 @@ const OnlineCloudSection = () => {
             <Subtitle text={subtitle} bold={subtitleBold} />
 
             <div className=' flex mt-12 gap-2'>
-              <BlueButton title={button1.title} link={button1.link} />
 
+              <div className='relative pl-8'>
+
+                <OnlineCloudIcon />
+                
+                <BlueButton title={button1.title} link={button1.link} />
+              </div>
+              
               <TransparentButton title={button2.title} link={button2.link} />
             </div>
                           
