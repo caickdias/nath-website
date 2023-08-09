@@ -2,15 +2,20 @@ import { items } from '../../../data/navbar';
 
 import Logo from '../../Logo';
 import MenuItem from './MenuItem';
+import SquaresBg from '../../SquaresBg';
 
 import SocialIcons from '../../SocialIcons';
+import { footer } from '../../../data/landing-page/squares';
 
 const Footer = () => {
 
     const year = new Date().getFullYear();
 
     return(
-        <footer className='flex flex-col items-center justify-center gap-5 pb-7'>
+        <footer className='relative flex flex-col items-center justify-center gap-5 pb-7'>
+
+            <SquaresBg squares={footer} />
+
             <div className='scale-[0.7]'>
                 <Logo />
             </div>

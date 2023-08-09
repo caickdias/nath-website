@@ -110,6 +110,41 @@ const aboutme = {
             top: 210,
             left: 130,
         },
+        square3: {
+            size: 80,
+            top: 670,
+            left: 210,
+        },
+        square4: {
+            size: 100,
+            top: 1270,
+            left: 30,
+        },
+    }
+}
+
+const contact = {
+    sm: {
+        square1: {
+            size: 190,
+            top: 70,
+            left: 50,
+        },
+    }
+}
+
+const footer = {
+    sm: {
+        square1: {
+            size: 110,
+            top: -40,
+            left: 110,
+        },
+        square2: {
+            size: 60,
+            top: -100,
+            left: 220,
+        },
     }
 }
 
@@ -120,5 +155,7 @@ export {
     onlineCloud,
     haydn,
     ecommerce,
-    aboutme
+    aboutme,
+    contact,
+    footer
 }
