@@ -6,7 +6,7 @@ import ThirdParagraph from './ThirdParagraph';
 const AboutMeSection = () => {
 
     return(
-        <section className='px-9'>
+        <section className='px-9' id="aboutme">
             <Header />
 
             <FirstParagraph />

@@ -2,28 +2,28 @@ const items = [
     {
         name: 'design-projects',
         title: 'Design projects',
-        link: '#'
+        link: '#projects'
     },
     {
         name: 'about',
         title: 'About',
-        link: '#'
+        link: '#aboutme'
     },
     {
         name: 'photography',
         title: 'Photography',
-        link: '#'
+        link: '#photography'
     },
     {
         name: 'resume',
         title: 'Resume',
-        link: '#'
+        link: '#resume'
     },
 ];
 
 const cta = {
     title: "Let' s talk!",
-    link: "#"
+    link: "#contact"
 }
 
 export {

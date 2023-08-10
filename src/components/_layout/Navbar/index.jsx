@@ -4,7 +4,7 @@ import { items, cta } from '../../../data/navbar';
 
 import NavItem from './NavItem';
 import NavCta from "./NavCta";
-import Hamburger from "../Hamburger";
+import Hamburger from "../../Hamburger";
 
 const Navbar = () => {
   return (

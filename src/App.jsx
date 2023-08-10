@@ -16,7 +16,7 @@ import Footer from './components/_layout/Footer';
 function App() {  
 
   return (
-    <div className='relative bg-background flex flex-col'>
+    <div className='relative bg-background flex flex-col overflow-x-hidden'>
 
       <LoadingScreen />
 

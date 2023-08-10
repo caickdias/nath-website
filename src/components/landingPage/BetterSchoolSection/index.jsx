@@ -11,7 +11,7 @@ import TransparentButton from '../../buttons/TransparentButton';
 
 const BetterSchoolSection = () => {
   return (
-    <Section squares={betterSchool}>
+    <Section squares={betterSchool} id="projects">
         <Left>
             <img 
               src={image}

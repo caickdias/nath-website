@@ -30,7 +30,7 @@ const EarlyMoneySection = () => {
               <img 
                 src={image}
                 alt="mac"  
-                className='relative h-5/6 lg:hidden z-50'
+                className='relative h-5/6 lg:hidden z-40'
               />
             </div>
 

@@ -7,7 +7,7 @@ import ContactForm from './ContactForm';
 
 const ContactSection = () => {
     return(
-        <section className="relative flex flex-col w-screen">
+        <section className="relative flex flex-col w-screen" id="contact">
             <Left>
 
                 <SquaresBg squares={contact} />

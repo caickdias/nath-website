@@ -15,24 +15,29 @@ const LoadingScreen = () => {
     const [loading, setLoading] = useState(0);
 
     useEffect(() => {
+
+        document.body.style.overflow = 'hidden';
+        
         setTimeout(() => setLoading(-1000), [LOADING_DELAY]);
         setTimeout(() => setFlashScale(120), [2500 + LOADING_DELAY]);
         setTimeout(() => setFlashScale(0), [2545 + LOADING_DELAY]);
         setTimeout(() => setPicOpacity(0), [2800 + LOADING_DELAY]);
         setTimeout(() => {setPicX(150);setPicY(-50)}, [2800 + LOADING_DELAY]);
         setTimeout(() => setVisibility(0), [4000 + LOADING_DELAY]);
+        setTimeout(() => document.body.style.overflowY = 'scroll', [4000 + LOADING_DELAY]);
+        
     },[]);
 
 
     return (
-        <div className="absolute w-full h-screen flex items-center justify-center bg-[#0F1010] z-[100] overflow-hidden transformation-all duration-700"
+        <div className="fixed w-full h-screen flex items-center justify-center bg-background z-[100] overflow-hidden transformation-all duration-700"
             style={{ opacity: picOpacity, transform: `scale(${visibility})` }}
         >
             <div className='absolute bottom-[41%] left-[49%] bg-white blur-lg w-16 h-16 rounded-full transition-all duration-300 z-[20]'
                 style={{ transform: `scale(${flashScale})` }}
             />
 
-            <div className='absolute bg-[#0F1010] w-screen h-screen z-20 transition-all duration-[3000ms]'
+            <div className='absolute bg-background w-screen h-screen z-20 transition-all duration-[3000ms]'
                 style={{ transform: `translate(0, ${loading}px)` }}
             />
 

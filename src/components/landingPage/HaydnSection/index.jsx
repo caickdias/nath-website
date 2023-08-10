@@ -24,7 +24,7 @@ const HaydnSection = () => {
             <img 
               src={image}
               alt="mac"  
-              className='h-5/6 my-12 lg:hidden z-50'
+              className='h-5/6 my-12 lg:hidden z-40'
             />
 
             <Subtitle text={subtitle} bold={subtitleBold} />
