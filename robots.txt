@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /icons/icon-*.svg
+Disallow: /favicon.ico
+Disallow: /fonts/times-new-roman.ttf
+
+Sitemap: https://honkai.com.br/sitemap.xml
